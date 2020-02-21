@@ -9,12 +9,12 @@ steps:
   inputs:
     command: 'install'
 
-- task: Gulp@1
-  inputs:
-    gulpFile: 'gulpfile.js'
-    targets: 
-    arguments: '--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)'
-    enableCodeCoverage: false
+# - task: Gulp@1
+#   inputs:
+#     gulpFile: 'gulpfile.js'
+#     targets: 
+#     arguments: '--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)'
+#     enableCodeCoverage: false
 
 - task: PublishBuildArtifacts@1
   inputs:
