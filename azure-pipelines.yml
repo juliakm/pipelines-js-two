@@ -11,7 +11,7 @@ steps:
 
 - task: Gulp@1
   inputs:
-    gulpFile: 'gulpfile.js'
+    gulpFile: 'nodejs-express-hello-world-app/gulpfile.js'
     targets: 
     arguments: '--packageName=$(Build.BuildId).zip --packagePath=$(Build.ArtifactStagingDirectory)'
     enableCodeCoverage: false
